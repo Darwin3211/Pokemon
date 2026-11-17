@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GIPHY Random GIF</title>
+    <style>
+      body {
+        background-color: #0b1026;
+        color: white;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+      img {
+        width: 200px;
+        transition: transform 0.3s ease;
+        animation: bounce 1.5s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="Enter a GIF category..." />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="container">
+      <h2>Pokemon</h2>
+    </div>
+
+    <img src="" alt="Random GIF" height="200px" width="200px" />
+
+    <div class="storage"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
